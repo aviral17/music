@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+/* For Lyrics font below */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
+/* Active Navigation Link */
+.active {
+  @apply text-cyan-500;
+}
+
+.mus_font {
+  font-family: "Rubik", sans-serif;
+}
+
+.loader_text {
+  color: yellow !important;
+}
+
+.lyrics {
+  font-family: "Roboto Condensed", sans-serif;
+  background: rgba(18, 14, 77, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(13.1px);
+  -webkit-backdrop-filter: blur(13.1px);
+}
+
+.lyrics span {
+}
+
+/* The active class is being applied to the Navbar links because it is likely being used in conjunction with React Router. When a NavLink component is active, it automatically receives an active class, which can be styled using CSS, just like any other class.
+
+So, in the above Tailwind CSS code, the active class is used to style the active links in the Navbar. The CSS rules inside the .active selector will only apply to elements with the active class, which is automatically applied to the active NavLink component by React Router. */
+
+.active svg {
+  @apply text-cyan-500;
+}
+
+/* .active svg {} is a CSS selector targeting svg elements that are descendants of an element with the class .active. This means that any svg element that is a child of an element with the .active class will receive the CSS properties defined within this selector.
+
+In the context of a navigation menu, this selector would be used to apply styles to any icons or graphics within the active link, in addition to the link text itself. */
+
+.bar:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.bar:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.bar:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.bar:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.bar:nth-child(6) {
+  animation-delay: 1s;
+}
+
+.smooth-transition {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

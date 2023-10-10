@@ -1,0 +1,39 @@
+// https://agneym.github.io/react-loading/
+
+A) Fetch
+
+const options = {
+  method: 'GET',
+  headers: {
+    'X-RapidAPI-Key': 'f28d4974a7msha54cca3c9236d4dp1345d6jsn936981ff773e',
+    'X-RapidAPI-Host': ''
+  }
+};
+
+fetch('https://spotify23.p.rapidapi.com/tracks/?ids=4WNcduiCmDNfmTEz7JvmLv', options)
+  .then(response => response.json())
+  .then(response => console.log(response))
+  .catch(err => console.error(err));
+
+B) Axios
+
+import axios from "axios";
+
+const options = {
+  method: 'GET',
+  url: 'https://spotify23.p.rapidapi.com/tracks/',
+  params: {ids: '4WNcduiCmDNfmTEz7JvmLv'},
+  headers: {
+    'X-RapidAPI-Key': 'f28d4974a7msha54cca3c9236d4dp1345d6jsn936981ff773e',
+    'X-RapidAPI-Host': ''
+  }
+};
+
+axios.request(options).then(function (response) {
+  console.log(response.data);
+}).catch(function (error) {
+  console.error(error);
+});
+
+
+
