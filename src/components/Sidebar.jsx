@@ -1,4 +1,4 @@
-// update it as per altest changes
+// updated it as per altest changes
 
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
