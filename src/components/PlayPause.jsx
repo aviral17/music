@@ -1,3 +1,5 @@
+// update it as per latest changes
+
 import { FaPauseCircle, FaPlayCircle } from "react-icons/fa";
 
 const PlayPause = ({ isPlaying, activeSong, song, handlePause, handlePlay }) =>
